@@ -1,0 +1,83 @@
+<!DOCTYPE index>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>By wanio1</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--Main title-->
+  <header>
+    <h1 class="title">Kalkulator <i>BMI</i></h1>
+  </header>
+<main>
+  <section class="main-content-kiri">  
+  <!--Main Article-->
+  <article class="article-kiri">
+    <p>
+      Badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat.
+    </p>
+    <p style="font-weight : bold">
+      Bagaimana denganmu? Yuk, hitung sekarang di BMI Kalkulator
+    </p>
+  </article>
+    
+  <!--Form-->
+    <form>
+      <div class="Gender">
+        <div class="title-gender">Jenis Kelamin</div>
+        <input type="radio" id="Laki" name="selection-Gender" value="Laki-Laki"><label for="Laki-Laki">Laki-Laki</label>
+        <input type="radio" id="perempuan" name="selection-Gender" value="Perempuan"><label for="Perempuan">Perempuan</label>
+      </div>
+      <div>
+        <label for="input-berat-badan">Berat Badan(kg)</label>
+        <input type="number" id="Berat-Badan">
+      </div>
+      <div>
+        <label for="input-usia">Usia</label>
+        <input type="number" id="usia">
+      </div>
+      <div>
+        <label for="input-Tinggi-Badan">Tinggi Badan(cm)</label>
+        <input type="number" id="Tinggi-Badan">
+      </div>
+      <div>
+        <button id="submit-bmi" style="background-color: #07161B;
+          color: white">Submit BMI</button>
+        <button id="reset">Reset</button>
+      </div>
+    </form>
+    
+    <!--Form Article--> 
+    <header>
+      <h2>Keunggulan Fitur</h2>
+    </header>
+    <ol>
+      <li>Menghitung Berat Badan</li>
+      <li>Menentukan Kategori Berat Badan Ideal atau Tidak</li>
+      <li>Mempersiapkan Program Penurunan Berat Badan</li>
+    </ol> 
+  </section>
+ 
+  <!--Result Article-->
+  <section class="main-content-kanan">
+    <header>
+      <h1 class="Result" style="text-align: center;">Result</h1>
+    </header>
+    
+    <!--Result Section-->
+    <section class="section-result">
+      <p id="status"></p>
+      <h2 id="hasilbmi">00.0</h2>
+      <p id="keterangan"></p>
+    </section>
+    
+  </section>
+</main>
+  <script src="js/index.js"></script>
+</body>
+</html>
